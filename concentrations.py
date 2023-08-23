@@ -37,5 +37,8 @@ class Fenetre(tk.Tk):
         self.entre1.delete(0, tk.END)
         self.entre2.delete(0, tk.END)
         self.entre3.delete(0, tk.END)
-app = Fenetre()
-app.mainloop()        
+
+if __name__ == '__main__':
+    app = Fenetre()
+    app.mainloop() 
+       
