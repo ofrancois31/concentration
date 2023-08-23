@@ -33,6 +33,9 @@ class Fenetre(tk.Tk):
         resultat=(v_densite*10*v_purete)/v_masse_molaire
         result=round(resultat, 3)
         self.label1.configure(text=str(result)+" "+ "mol/L")       
-
+        #
+        self.entre1.delete(0, tk.END)
+        self.entre2.delete(0, tk.END)
+        self.entre3.delete(0, tk.END)
 app = Fenetre()
 app.mainloop()        
